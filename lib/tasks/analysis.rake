@@ -1,6 +1,7 @@
 require File.expand_path('../../../config/environment', __FILE__) 
 desc 'analysis blog'
 task :analysis_blog do
+
   path = `pwd`.delete("\n") << "/public/blogs/"
     Dir.open(path).each do |file|
       next if file =~ /^\./
