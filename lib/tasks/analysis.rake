@@ -4,6 +4,7 @@ task :analysis_blog do
   path = `pwd`.delete("\n") << "/public/blogs/"
     Dir.open(path).each do |file|
       next if file =~ /^\./
+      puts "正在解析#{file}..."
       title = file.gsub(/\.md$/,"")
       body = File.open("#{path}#{file}").read
       if topic = Topic.find_by_title(title)
