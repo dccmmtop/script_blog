@@ -14,3 +14,19 @@
  *= require_self
  */
 @import "bootstrap";
+.info{
+  color:#959595;
+}
+a{
+  color : #e67e22;
+  outline: none;
+  outline-color: initial;
+  outline-style: none;
+  outline-width: initial;
+  text-decoration: none;
+  text-decoration-line: none;
+  text-decoration-style: initial;
+  text-decoration-color: initial;
+}
+a:hover{color:#959595
+}

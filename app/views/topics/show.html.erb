@@ -1,1 +1,7 @@
+<h1 class="center-block"><%= @topic.title %></h1>
+<hr>
+<div class="center-block">
+  <span class="info"><%= @topic.created_at.strftime("%Y-%m-%d")  %></span>  •
+  <span class="info">阅读<%= @topic.reading_count  %>次</span>
+</div>
 <%=markdown @topic.body %>
