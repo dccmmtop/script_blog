@@ -1,0 +1,13 @@
+<% if @topics.size == 0 %>
+  <h1 class="center-block alert-message">Not Found...</h1>
+<% else %>
+  <p hidden data-search=<%= params[:search] %>></p>
+  <div class="search-result">
+    <% @topics.each do |topic| %>
+      <h4 class="index-title"><%= link_to topic.title,topic_path(topic) %></h4>
+      <span class="info"><%= topic.created_at.strftime("%Y-%m-%d")  %></span>  •
+      <span class="info">阅读<%= topic.reading_count  %>次</span>
+      <br></br>
+    <% end %>
+  </div>
+<% end %>

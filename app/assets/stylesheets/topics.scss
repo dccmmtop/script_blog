@@ -7,5 +7,26 @@
 }
 
 .index-title{
-display:inline;
+  display:inline;
+}
+
+input.form-control.input-sm{
+  border-right-color:#fff;
+  border-right-width:0px;
+  box-shadow: none;
+}
+span.input-group-addon.submit{
+  border-left-width:0px;
+  background-color:#fff;
+}
+input.form-control.input-sm:focus{
+  border-color:#ccc;
+  box-shadow: none;
+}
+
+
+.alert-message{
+  text-align: center;
+  margin-top:40%;
+  color:#ccc;
 }
