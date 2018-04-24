@@ -29,5 +29,12 @@ a{
   text-decoration-style: initial;
   text-decoration-color: initial;
 }
-a:hover{color:#959595
+a:hover{color:#959595;
+  text-decoration:none;
+}
+.author{
+  width:100%;
+  span{
+    margin-left: 46%;
+  }
 }
