@@ -4,11 +4,12 @@ lock "~> 3.10.2"
 set :application, "script_blog"
 set :repo_url, "https://github.com/dccmmtop/script_blog.git"
 
+
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-# set :deploy_to, "/var/www/my_app_name"
+set :deploy_to, "/var/www/script_blog/"
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
