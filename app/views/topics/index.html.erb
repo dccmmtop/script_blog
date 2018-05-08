@@ -1,7 +1,6 @@
-<%# <% @topics.each do |topic| %>
-<%#   <h4 class="index-title"><%= link_to topic.title,topic_path(topic) %></h4>
-<%#   <span class="info"><%= topic.created_at.strftime("%Y-%m-%d")  %></span>  •
-<%#   <span class="info">阅读<%= topic.reading_count  %>次</span>
-<%#   <br></br>
-<%# <% end %>
-<h1>ok</h1>
+<% @topics.each do |topic| %>
+  <h4 class="index-title"><%= link_to topic.title,topic_path(topic) %></h4>
+  <span class="info"><%= topic.created_at.strftime("%Y-%m-%d")  %></span>  •
+  <span class="info">阅读<%= topic.reading_count  %>次</span>
+  <br></br>
+<% end %>
