@@ -1,6 +1,7 @@
 class TopicsController < ApplicationController
   def index
     @topics = Topic.all.order("reading_count desc,created_at desc")
+    p "====#{@topics}"
   end
 
   def show
