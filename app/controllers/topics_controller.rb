@@ -1,8 +1,8 @@
 class TopicsController < ApplicationController
   def index
     @topics = Topic.all.order("reading_count desc,created_at desc")
-    p "====#{@topics.title}"
-    p "====#{@topics.created_at}"
+    p "====#{@topics.first.title}"
+    p "====#{@topics.first.created_at}"
   end
 
   def show
