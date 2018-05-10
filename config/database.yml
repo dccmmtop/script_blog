@@ -22,5 +22,6 @@ test:
 
 production:
   <<: *default
-  username: 'root'
   database: db/production_blog
+  username: 'root'
+  password: 'dccmmtop'
