@@ -22,4 +22,5 @@ test:
 
 production:
   <<: *default
+  username: 'root'
   database: db/production_blog
