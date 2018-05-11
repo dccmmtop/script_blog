@@ -15,13 +15,11 @@
 //= require bootstrap
 //= require_tree .
 $(document).on("turbolinks:load",function(){
-  var window_height = window.outerHeight
-  var container_height = parseInt($(".container").css("height").replace(/px/,""),10)
-  console.log(window_height)
-  console.log(container_height)
-  if (window_height >= container_height)
+  var window_height = window.innerHeight
+  var body_h = $("body").height();
+  if (window_height >= body_h)
   {
-    $(".container").css("height",window_height-176+"px")
-    console.log($(".container").css("height"))
+    $(".blank").height(window_height - body_h);
+    console.log($(".blank").height());
   }
 })
