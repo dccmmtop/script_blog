@@ -29,17 +29,17 @@ a{
   text-decoration-line: none;
   text-decoration-style: initial;
   text-decoration-color: initial;
-}
-a:hover{color:#959595;
-  text-decoration:none;
+  &:hover{
+    color:#959595;
+    text-decoration:none;
+  }
 }
 .blank{
-min-height:250px;
+  min-height:250px;
+}
+.footer{
 }
 .author{
-  width:100%;
   height:80px;
-  span{
-    margin-left: 46%;
-  }
+  text-align:center;
 }
