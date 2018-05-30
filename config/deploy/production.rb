@@ -4,7 +4,7 @@
 # You can define all roles on a single server, or split them:
 
 # server "39.108.138.149", user: "root", roles: %w{app db web}, my_property: :my_value
-server "39.108.138.149", user: "deploy", roles: %w{app db web}
+server "65.49.211.131", user: "dccmmtop", roles: %w{app db web}
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
 
@@ -43,8 +43,8 @@ server "39.108.138.149", user: "deploy", roles: %w{app db web}
 # Global options
 # --------------
  set :ssh_options, {
-   keys: %w(/home/deploy/.ssh/id_rsa),
-   port: 22
+   keys: %w(/home/dccmmtop/.ssh/id_rsa),
+   port: 29484
    # forward_agent: false,
    # auth_methods: %w(password)
  }
