@@ -9,18 +9,18 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120063959-1"></script>
     <script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-gtag('config', 'UA-120063959-1');
+      gtag('config', 'UA-120063959-1');
     </script>
   </head>
 
   <body>
     <div class="container">
       <br></br>
-      <div class="pull-right col-md-3">
+      <div class="pull-right col-md-3 col-sm-12">
         <%= render "/layouts/search" %>
       </div>
       <%= yield %>

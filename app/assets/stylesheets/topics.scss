@@ -1,35 +1,38 @@
 // Place all the styles related to the topics controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.date{
-  background-color : #666666;
-  color : #660033
+.date {
+  background-color: #666666;
+  color: #660033;
 }
-.fa-fw{
- color:#777777
-}
-
-.index-title{
-  display:inline;
+.fa-fw {
+  color: #777777;
 }
 
-input.form-control.input-sm{
-  border-right-color:#fff;
-  border-right-width:0px;
+.index-title {
+  display: inline;
+}
+
+input.form-control.input-sm {
+  border-right-color: #fff;
+  border-right-width: 0px;
   box-shadow: none;
 }
-span.input-group-addon.submit{
-  border-left-width:0px;
-  background-color:#fff;
+span.input-group-addon.submit {
+  border-left-width: 0px;
+  background-color: #fff;
 }
-input.form-control.input-sm:focus{
-  border-color:#ccc;
+input.form-control.input-sm:focus {
+  border-color: #ccc;
   box-shadow: none;
 }
 
-
-.alert-message{
+.alert-message {
   text-align: center;
-  margin-top:40%;
-  color:#ccc;
+  margin-top: 40%;
+  color: #ccc;
+}
+
+.sub-title {
+  margin-bottom: 10px;
 }
