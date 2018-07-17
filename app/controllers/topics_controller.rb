@@ -1,4 +1,5 @@
 class TopicsController < ApplicationController
+  include TopicsHelper
   def index
     @topics = Topic.all.order("created_at desc,reading_count desc")
   end
@@ -13,7 +14,7 @@ class TopicsController < ApplicationController
     if key_word.size == 0
       @topics = []
     else
-      @topics = Topic.where("title like '%#{key_word}%' or body like '%#{key_word}%'")
+      @topics = Topic.where("title like '%#{key_word}%' or body like '%#{key_word}%' or tags like '%#{key_word}'")
     end
   end
 end
