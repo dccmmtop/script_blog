@@ -13,14 +13,18 @@
  *= require_tree .
  *= require_self
  */
-@import "bootstrap";
-@import "font-awesome-sprockets";
-@import "font-awesome";
-.info{
-  color:#959595;
+@import 'bootstrap';
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
+body {
+  font-size: 18px;
+  color: #002b35;
 }
-a{
-  color : #e67e22;
+.info {
+  color: #959595;
+}
+a {
+  color: #e67e22;
   outline: none;
   outline-color: initial;
   outline-style: none;
@@ -29,17 +33,17 @@ a{
   text-decoration-line: none;
   text-decoration-style: initial;
   text-decoration-color: initial;
-  &:hover{
-    color:#959595;
-    text-decoration:none;
+  &:hover {
+    color: #959595;
+    text-decoration: none;
   }
 }
-.blank{
-  min-height:250px;
+.blank {
+  min-height: 250px;
 }
-.footer{
+.footer {
 }
-.author{
-  height:80px;
-  text-align:center;
+.author {
+  height: 80px;
+  text-align: center;
 }
