@@ -1,4 +1,6 @@
 // This is a manifest file that'll be compiled into application.js, which will include all the files
+//
+// {}{}
 // listed below.
 //
 // Any JavaScript/Coffee file within this directory, lib/assets/javascripts, or any plugin's
@@ -14,12 +16,10 @@
 //= require turbolinks
 //= require bootstrap
 //= require_tree .
-$(document).on("turbolinks:load",function(){
-  var window_height = window.innerHeight
-  var body_h = $("body").height();
-  if (window_height >= body_h)
-  {
-    $(".blank").height(window_height - body_h);
-    console.log($(".blank").height());
-  }
-})
+$(document).on('turbolinks:load', function() {
+  content = $('#blog-content').data('content');
+  if (content) $('#blog-content').append(marked(content));
+  $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+  });
+});

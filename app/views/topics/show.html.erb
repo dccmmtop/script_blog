@@ -11,4 +11,5 @@
     <span class="tags"><%= topic_tag %></span>
   <% end %>
 </div>
-<%=markdown @topic.body %>
+<div id="blog-content" data-content="<%= @topic.body %>">
+</div>
