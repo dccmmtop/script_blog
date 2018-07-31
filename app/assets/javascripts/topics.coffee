@@ -3,5 +3,4 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 # $('#blog-content').append( marked(content))
 $(this).on("turbolinks:load", ->
-  $("table").addClass("table table-striped")
 )

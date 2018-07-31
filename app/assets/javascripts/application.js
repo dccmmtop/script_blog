@@ -22,4 +22,5 @@ $(document).on('turbolinks:load', function() {
   $('pre code').each(function(i, block) {
     hljs.highlightBlock(block);
   });
+  $('table').addClass('table table-striped');
 });
