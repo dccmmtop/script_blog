@@ -344,12 +344,12 @@
       (this.renderer.options = this.options);
   }
   function a(e, t) {
-    return e;
-    // .replace(t ? /&/g : /&(?!#?\w+;)/g, '&amp;')
-    // .replace(/</g, '&lt;')
-    // .replace(/>/g, '&gt;')
-    // .replace(/"/g, '&quot;')
-    // .replace(/'/g, '&#39;');
+    return e
+      .replace(t ? /&/g : /&(?!#?\w+;)/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
   }
   function h(e) {
     return e.replace(/&(#(?:\d+)|(?:#x[0-9A-Fa-f]+)|(?:\w+));?/gi, function(
