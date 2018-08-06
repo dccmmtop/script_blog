@@ -38,13 +38,11 @@ gem "kaminari", github: "amatsuda/kaminari"
 gem 'jquery-rails'
 gem 'hirb'
 # markdown
-gem 'redcarpet'
-# 代码颜色高亮
-gem 'coderay'
 
 gem 'friendly_id'
 
 gem "font-awesome-sass","~> 5.0.9"
+gem "grape"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

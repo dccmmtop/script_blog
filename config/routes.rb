@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+
+  mount Api::ApplicationApi => '/api'
   root 'topics#index'
 
   resources :topics do
