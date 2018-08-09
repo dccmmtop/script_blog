@@ -17,8 +17,7 @@
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
 body {
-  font-size: 18px;
-  color: #002b35;
+  line-height: 1.4;
 }
 .info {
   color: #959595;
@@ -46,4 +45,26 @@ a {
 .author {
   height: 80px;
   text-align: center;
+}
+h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+blockquote {
+  border-left: 4px solid #dfe2e5;
+  padding: 0 15px;
+  color: #777777;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  line-height: 1.4;
+  cursor: text;
 }
