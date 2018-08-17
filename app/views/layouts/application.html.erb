@@ -29,6 +29,20 @@
       <div class="pull-right col-md-3 col-sm-12">
         <%= render "/layouts/search" %>
       </div>
+      <div>
+        <script>
+          (function() {
+            var cx = '004092443897244891617:na5ncgzo-bu';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+          })();
+        </script>
+        <gcse:search></gcse:search>
+      </div>
       <%= yield %>
     </div>
     <%# <%= render "/layouts/footer.html.erb" %>
