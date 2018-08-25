@@ -1,4 +1,4 @@
-source 'https://gems.ruby-china.org'
+source 'https://gems.ruby-china.com'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -36,7 +36,6 @@ gem 'pg', '~> 0.18'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem "kaminari", github: "amatsuda/kaminari"
 gem 'jquery-rails'
-gem 'hirb'
 # markdown
 
 gem 'friendly_id'
@@ -44,7 +43,11 @@ gem 'friendly_id'
 gem "font-awesome-sass","~> 5.0.9"
 gem "grape"
 
+
+gem 'ransack'
+
 group :development, :test do
+gem 'hirb'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver

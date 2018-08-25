@@ -1,17 +1,6 @@
-<%= form_tag("/topics/search",method:'get') do  %>
-  <div class="input-group">
-    <script>
-      (function() {
-        var cx = '004092443897244891617:na5ncgzo-bu';
-        var gcse = document.createElement('script');
-        gcse.type = 'text/javascript';
-        gcse.async = true;
-        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(gcse, s);
-      })();
-    </script>
-    <gcse:search></gcse:search>
-    <!-- <input type="search" class="form&#45;control input&#45;sm" placeholder="search..." name="search"><span class="input&#45;group&#45;addon  submit"><i class="fa fa&#45;search"></i></span> -->
-  </div>
-<% end %>
+<div class="pull-right search">
+  <%= search_form_for @q,url: topics_path,html:{class: 'form-inline'} do |f| %>
+    <%= f.search_field :title_or_body_or_tags_cont ,class: 'form-control'%>
+    <%= f.submit :class => "btn btn-success" %>
+  <% end %>
+</div>
