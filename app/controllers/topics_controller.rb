@@ -2,7 +2,7 @@ class TopicsController < ApplicationController
   include TopicsHelper
  def index
     @q = Topic.search(params[:q])
-    @topics = @q.result(distinct: true).order(updated_at: :desc)
+    @topics = @q.result(distinct: true).order(created_at: :desc)
   end
 
   def show
