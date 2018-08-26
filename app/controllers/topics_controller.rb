@@ -1,13 +1,17 @@
 class TopicsController < ApplicationController
   include TopicsHelper
- def index
+  def index
     @q = Topic.search(params[:q])
-    @topics = @q.result(distinct: true).order(created_at: :desc)
+    if params[:q] &&  params[:q].values.first == ENV['SCRIPT_BLOG_ACCESS']
+      @topics = Topic.where("hidden is true").order(created_at: :desc)
+    else
+      @topics = @q.result(distinct: true).where("hidden is not true").order(created_at: :desc)
+    end
   end
 
   def show
     @topic = Topic.friendly.find(params[:id])
     @topic.update(reading_count: @topic.reading_count + 1)
-    @q = Topic.ransack(params[:search])
+    @q = Topic.ransack(params[:q])
   end
 end

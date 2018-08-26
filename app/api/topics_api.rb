@@ -18,6 +18,9 @@ module Api
         else
           _params = {title:title,tags:tag,body:body} 
         end
+        if tag =~ /hidden/
+          _params[:hidden] = true
+        end
         if topic = Topic.find_by_title(title)
           topic.update(_params)
         else
