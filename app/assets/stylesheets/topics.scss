@@ -34,17 +34,23 @@ input.form-control.input-sm:focus {
 }
 
 .sub-title {
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 span.split {
-  margin-right: 20px;
+  margin-left: 20px;
 }
 span.tags {
-  background: #666666;
+  display: inline-block;
+  margin-right: 10px;
+  padding: 5px 10px 7px;
+  background: #888;
+  color: #fff !important;
   border-radius: 5px;
-  padding-right: 5px;
-  padding-left: 5px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  color: wheat;
+  // background: #666666;
+  // border-radius: 5px;
+  // padding-right: 5px;
+  // padding-left: 5px;
+  // padding-top: 3px;
+  // padding-bottom: 3px;
+  // color: wheat;
 }

@@ -19,12 +19,15 @@
 body {
   line-height: 1.4;
   font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .info {
   color: #959595;
 }
 a {
-  color: #e67e22;
+  color: #555;
   outline: none;
   outline-color: initial;
   outline-style: none;
@@ -85,4 +88,68 @@ pre{
   padding: 0px;
   border-radius: 6px;
   border: 1px solid #f7f3f3;
+}
+.masthead {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+  border-bottom: 2px solid #53887e;
+  background: #4cac9d;
+  flex: 0 0 auto;
+}
+.masthead-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #505050;
+}
+.masthead-title a {
+  color: #fff;
+}
+.masthead-title small {
+  font-size: 65%;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0;
+}
+.masthead div#search {
+  display: inline-block;
+  float: right;
+}
+.masthead div#search input {
+  background: #fff;
+  transition: all 0.4s;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+  border: 1px solid #ccc;
+}
+div#search input {
+  padding: 8px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+html {
+  height: 100%;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+}
+html::-webkit-scrollbar {
+  width: 0px;
+}
+footer{
+  margin-top:50px;
+  flex: 0 0 auto;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+.main-content {
+  flex: 1 0 auto;
+}
+
+.love
+{
+  color: #555;
+  &:hover{
+    color: red;
+  }
 }

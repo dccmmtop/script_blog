@@ -1,11 +1,11 @@
 <h1 class="center-block"><%= @topic.title %></h1>
 <hr>
 <div class="sub-title">
-  <%= link_to root_path do %>
-    <%= icon("fas","home",{class: 'fa-fw'}) %>
-  <% end %> 
-  <span class="info"><%= @topic.created_at.strftime("%Y-%m-%d")  %></span>  •
-  <span class="info">阅读<%= @topic.reading_count  %>次</span>
+  <%# <%= link_to root_path do %>
+  <%#   <%= icon("fas","home",{class: 'fa-fw'}) %>
+  <%# <% end %> 
+<span class="info"><%= @topic.created_at.strftime("%Y-%m-%d")  %></span>
+  <!-- <span class="info">阅读<%= @topic.reading_count  %>次</span> -->
   <span class="split"></span>
   <% get_tags(@topic.tags).each do |topic_tag| %>
     <span class="tags"><%= topic_tag %></span>

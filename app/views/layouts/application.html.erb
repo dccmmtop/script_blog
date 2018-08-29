@@ -24,12 +24,20 @@
   </head>
 
   <body>
-    <div class="container">
-      <br>
-      <%= render "/layouts/search" %>
-      <br>
-      <div>
+    <div class="masthead">
+      <div class="container">
+        <h3 class="masthead-title">
+          <a href="/" title="Home">梦里不知身是客</a>
+          <small>My little tech blog</small>
+          <div id="search">
+            <%= search_form_for @q,url: topics_path,html:{} do |f| %>
+              <%= f.search_field :title_or_body_or_tags_cont , id: "search-query",placeholder: "Search" %>
+            <% end %>
+          </div>
+        </h3>
       </div>
+    </div>
+    <div class="container main-content">
       <%= yield %>
     </div>
     <%= render "/layouts/footer.html.erb" %>
