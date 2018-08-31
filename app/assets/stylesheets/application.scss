@@ -153,3 +153,24 @@ footer{
     color: red;
   }
 }
+
+.pagination {
+  display: inline-block;
+  padding-left: 0;
+  margin: 20px 0;
+  span{
+    display:inline-block;
+    border: 1px solid #ccc;
+    padding: 5px 15px;
+    border-radius: 50px;
+    &:hover{
+      background-color: #9fd8cf;
+      a{
+        color:#555;
+      }
+    }
+  }
+  .current{
+    background-color: #4cac9d;
+  }
+}

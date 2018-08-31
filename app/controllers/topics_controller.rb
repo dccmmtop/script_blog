@@ -3,9 +3,9 @@ class TopicsController < ApplicationController
   def index
     @q = Topic.search(params[:q])
     if params[:q] &&  params[:q].values.first == ENV['SCRIPT_BLOG_ACCESS']
-      @topics = Topic.where("hidden is true").order(created_at: :desc)
+      @topics = Topic.where("hidden is true").order(created_at: :desc).page(params[:page]).page(params[:page]).per(20)
     else
-      @topics = @q.result(distinct: true).where("hidden is not true").order(created_at: :desc)
+      @topics = @q.result(distinct: true).where("hidden is not true").order(created_at: :desc).page(params[:page]).per(20)
     end
   end
 
