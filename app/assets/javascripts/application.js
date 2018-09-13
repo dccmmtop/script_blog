@@ -23,4 +23,20 @@ $(document).on('turbolinks:load', function() {
     hljs.highlightBlock(block);
   });
   $('table').addClass('table table-striped');
+  document.onkeydown = KeyPress;
 });
+function KeyPress(){
+  var key;
+  key = KeyPress.arguments[0].keyCode;
+  if(key == 83 && !$("#topic_search").hasClass("search-bar")){
+    $("#topic_search").addClass("search-bar");
+    $("#search-query").addClass("form-control");
+    $("#search-query").val("");
+    $("#search-query").focus();
+    return false;
+  }
+  if (key == 27){
+    $("#topic_search").removeClass("search-bar");
+  }
+}
+
