@@ -6,7 +6,7 @@ $(this).on("turbolinks:load", ->
   $('img').zoomify()
   $("pre code").prepend("<a class='btn btn-info copy pull-right' >copy</a>")
   $(".copy").click ->
-    content = $(this).parent().parent().text()
+    content = $(this).parent().parent().text().slice(4)
     copyInput = $("#copy")
     copyInput.val(content)
     copyInput.select()
