@@ -4,4 +4,11 @@
 # $('#blog-content').append( marked(content))
 $(this).on("turbolinks:load", ->
   $('img').zoomify()
+  $("pre code").prepend("<a class='btn btn-info copy pull-right' >copy</a>")
+  $(".copy").click ->
+    content = $(this).parent().parent().text()
+    copyInput = $("#copy")
+    copyInput.val(content)
+    copyInput.select()
+    document.execCommand("Copy")
 )

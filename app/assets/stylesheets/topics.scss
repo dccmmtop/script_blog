@@ -54,3 +54,17 @@ span.tags {
   // padding-bottom: 3px;
   // color: wheat;
 }
+pre code{
+  .copy{
+    display: none;
+    background-color: #486973;
+    border-color: #486973;
+  }
+  &:hover{
+    .copy{
+      display: block;
+      background-color: #486973;
+      border-color: #486973;
+    }
+  }
+}
