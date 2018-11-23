@@ -55,6 +55,7 @@ span.tags {
   // color: wheat;
 }
 pre code{
+  display: block;
   .copy{
     display: none;
     background-color: #486973;
@@ -75,7 +76,7 @@ pre code{
   line-height: 1.85em;
   color: #3A4145;
 }
-code:not(.hljs) {
+code:not([class]) {
   color: #3A4145 !important;
   padding: 1px 3px !important;;
   font-family: 'source code pro', Inconsolata, monospace, sans-serif;
