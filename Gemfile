@@ -10,7 +10,7 @@ gem 'rack-cors', :require => 'rack/cors'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.5'
 # Use Puma as the app server
-gem 'puma', '~> 3.7'
+gem 'puma', '~> 4.3'
 # Use SCSS for stylesheets
 #
 gem 'sass-rails', '~> 5.0'
